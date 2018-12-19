@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ikhsanefendi.login.Slider">
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative1">
+
+        <GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:orientation="horizontal"
+            android:background="@drawable/back"
+            >
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/frame_slider"-->
+            <!--android:layout_columnWeight="2"-->
+            <!--android:layout_rowWeight="2"-->
+            <!--android:background="#5F93A0">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="550px"-->
+            <!--android:layout_height="500px">-->
+            <!--<com.daimajia.slider.library.SliderLayout-->
+            <!--android:id="@+id/slider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp" />-->
+            <!--</RelativeLayout>-->
+            <!--</FrameLayout>-->
+            <FrameLayout
+                android:id="@+id/frame1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="#5F93A0">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/lebar"
+                    android:layout_height="@dimen/tinggi">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/img_buku"
+                        android:src="@drawable/book"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_buku"
+                        android:layout_centerHorizontal="true"
+                        android:text="Daftar Buku"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_profile"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="#D2691E">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/lebar"
+                    android:layout_height="@dimen/tinggi">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/job"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/job"
+                        android:layout_centerHorizontal="true"
+                        android:text="Profile"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_about"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="#CD5C5C">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/lebar"
+                    android:layout_height="@dimen/tinggi">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/notif"
+                        android:src="@drawable/info"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/notif"
+                        android:layout_centerHorizontal="true"
+                        android:text="About"/>
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/frame_transaksi"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="#B8860B">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/lebar"
+                    android:layout_height="@dimen/tinggi">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/mail"
+                        android:src="@drawable/list"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mail"
+                        android:layout_centerHorizontal="true"
+                        android:text="Peminjaman Buku"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="470dp"
+        android:id="@+id/frame_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5F9EA0">
+
+
+        <Button
+            android:id="@+id/logout"
+            android:background="@color/biru"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Logout"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+
+

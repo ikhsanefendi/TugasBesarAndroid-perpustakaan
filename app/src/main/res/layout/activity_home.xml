@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:orientation="horizontal"
+    android:background="@drawable/back"
+    >
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/frame_slider"-->
+    <!--android:layout_columnWeight="2"-->
+    <!--android:layout_rowWeight="2"-->
+    <!--android:background="#5F93A0">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="550px"-->
+    <!--android:layout_height="500px">-->
+    <!--<com.daimajia.slider.library.SliderLayout-->
+    <!--android:id="@+id/slider"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp" />-->
+    <!--</RelativeLayout>-->
+    <!--</FrameLayout>-->
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#5F93A0">
+
+        <RelativeLayout
+            android:layout_width="550px"
+            android:layout_height="500px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/pengguna"
+                android:src="@drawable/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pengguna"
+                android:layout_centerHorizontal="true"
+                android:text="Daftar Buku"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#D2691E">
+
+        <RelativeLayout
+            android:layout_width="550px"
+            android:layout_height="500px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/job"
+                android:src="@drawable/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/job"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#CD5C5C">
+
+        <RelativeLayout
+            android:layout_width="550px"
+            android:layout_height="500px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/notif"
+                android:src="@drawable/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notif"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#B8860B">
+
+        <RelativeLayout
+            android:layout_width="550px"
+            android:layout_height="500px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/mail"
+                android:src="@drawable/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#2E8B57">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/rate"
+                android:src="@drawable/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#BC8F8F">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/rev"
+                android:src="@drawable/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rev"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</GridLayout>
